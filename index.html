@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeno — Présentation du projet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<style>
+:root{
+  --fond:#12161A; --carte:#1B2229; --bleu:#2F6BFF; --indigo:#5B4BFF; --cyan:#19B5C9;
+  --texte:#F2F5F9; --doux:#A9B4C2;
+}
+html,body{background:var(--fond)}
+.reveal{font-family:'Inter',sans-serif;color:var(--texte);font-size:30px}
+.reveal .slides{text-align:left}
+.reveal h1,.reveal h2,.reveal h3{font-family:'Poppins',sans-serif;color:var(--texte);text-transform:none;margin:0}
+.reveal h1{font-size:4.2em;font-weight:800;letter-spacing:.04em}
+.reveal h2{font-size:1.9em;font-weight:700;margin-bottom:.5em;line-height:1.15}
+.reveal h3{font-size:1em;font-weight:600;margin-bottom:.3em}
+.reveal p{margin:0 0 .6em;line-height:1.45;color:var(--doux)}
+.reveal .slogan{font-family:'Poppins',sans-serif;font-size:1.15em;font-weight:600;color:var(--texte)}
+.reveal .grad{background:linear-gradient(90deg,var(--bleu),var(--indigo));-webkit-background-clip:text;background-clip:text;color:transparent}
+.reveal .titre{display:flex;align-items:center;gap:56px}
+.emblem{flex:none}
+.cols{display:grid;gap:28px}
+.c2{grid-template-columns:1fr 1fr}
+.c3{grid-template-columns:1fr 1fr 1fr}
+.bloc{background:var(--carte);border-left:4px solid var(--bleu);padding:22px 26px;border-radius:6px}
+.bloc.i{border-left-color:var(--indigo)}
+.bloc.c{border-left-color:var(--cyan)}
+.bloc p{font-size:.78em;margin:0}
+.prix{font-family:'Poppins',sans-serif;font-size:1.6em;font-weight:700;color:var(--texte);margin:.1em 0 .3em}
+.prix small{font-size:.5em;font-weight:400;color:var(--doux)}
+.reveal ul{list-style:none;margin:0;padding:0}
+.reveal li{font-size:.78em;color:var(--doux);margin:.35em 0}
+.pied{position:absolute;left:0;bottom:-250px;font-size:.5em;color:var(--doux)}
+.reveal .progress{color:var(--indigo)}
+@media (prefers-reduced-motion:reduce){.reveal *{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- 1. Titre -->
+<section data-auto-animate>
+  <div class="titre">
+    <svg class="emblem" data-id="z" width="230" height="230" viewBox="0 0 200 200" aria-label="Logo Zeno">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#5B4BFF"/></linearGradient></defs>
+      <circle cx="100" cy="100" r="92" fill="none" stroke="#19B5C9" stroke-width="3" stroke-dasharray="10 7" stroke-linecap="round"/>
+      <circle cx="100" cy="100" r="80" fill="url(#g)"/>
+      <text x="100" y="130" text-anchor="middle" font-family="Poppins,sans-serif" font-weight="800" font-size="92" fill="#fff">Z</text>
+    </svg>
+    <div>
+      <h1>ZENO</h1>
+      <p class="slogan grad">Imaginez. Créez. Développez.</p>
+      <p>Votre influenceur virtuel, pour des vidéos qui se publient toutes seules.</p>
+    </div>
+  </div>
+  <p class="pied">Manarii TAUFA-WOJTYCZKA · Formation Créateur et Gestionnaire d'Entreprise · Tahiti Formation</p>
+</section>
+
+<!-- 2. Problème -->
+<section data-auto-animate>
+  <svg class="emblem" data-id="z" width="70" height="70" viewBox="0 0 200 200" style="position:absolute;top:-320px;right:0" aria-hidden="true">
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#19B5C9" stroke-width="3" stroke-dasharray="10 7"/>
+    <circle cx="100" cy="100" r="80" fill="#3F5BFF"/>
+    <text x="100" y="130" text-anchor="middle" font-family="Poppins,sans-serif" font-weight="800" font-size="92" fill="#fff">Z</text>
+  </svg>
+  <h2>Les réseaux sociaux prennent du temps que les petits commerces n'ont pas</h2>
+  <div class="cols c2">
+    <div class="bloc">
+      <h3>Jean-Pierre, 40 ans, restaurateur</h3>
+      <p>Débordé, débutant sur les réseaux, il veut plus de clients. Pas le temps, pas le budget pour une agence, et il refuse de montrer son visage.</p>
+    </div>
+    <div class="bloc i">
+      <h3>Mano, 25 ans, e-commerçant</h3>
+      <p>Il maîtrise la vente en ligne, mais produire des vidéos sans cesse le freine. Il veut automatiser pour que son activité s'autofinance.</p>
+    </div>
+  </div>
+  <p style="margin-top:1em">Notre cible : les PME du tourisme polynésien (pensions de famille, hôtels, restaurants, snacks) et les solopreneurs.</p>
+</section>
+
+<!-- 3. Solution -->
+<section>
+  <h2>Zeno crée l'influenceur, les vidéos et les publications</h2>
+  <div class="cols c3">
+    <div class="bloc"><h3>Créer</h3><p>Vous choisissez le visage, le nom et la voix de votre influenceur virtuel.</p></div>
+    <div class="bloc i"><h3>Générer</h3><p>Vous décrivez la vidéo. L'IA la produit, sans vous filmer ni monter.</p></div>
+    <div class="bloc c"><h3>Publier</h3><p>Vous planifiez, et Zeno publie sur TikTok, Instagram et YouTube.</p></div>
+  </div>
+  <p style="margin-top:1em">Un tableau de bord suit les publications et les statistiques.</p>
+</section>
+
+<!-- 4. Offres -->
+<section>
+  <h2>Trois offres, du test gratuit à l'agence</h2>
+  <div class="cols c3">
+    <div class="bloc c"><h3>Starter</h3><div class="prix">Gratuit</div>
+      <ul><li>1 influenceur</li><li>5 vidéos par mois</li><li>1 réseau, qualité 720p</li></ul></div>
+    <div class="bloc"><h3>Nova</h3><div class="prix">29 € <small>/ mois</small></div>
+      <ul><li>3 influenceurs</li><li>30 vidéos par mois</li><li>3 réseaux, 1080p / 4K, analytics</li></ul></div>
+    <div class="bloc i"><h3>Stellar</h3><div class="prix">100 € <small>/ mois</small></div>
+      <ul><li>50 influenceurs</li><li>250 vidéos par mois</li><li>Export, rapports, accès API</li></ul></div>
+  </div>
+</section>
+
+<!-- 5. Objectifs -->
+<section>
+  <h2>Ce que Zeno apporte à la Polynésie</h2>
+  <div class="cols c2">
+    <div class="bloc"><h3>Économique</h3><p>Créer des emplois informatiques locaux et réinvestir les bénéfices.</p></div>
+    <div class="bloc i"><h3>Social</h3><p>Rendre l'IA accessible aux snacks et pensions de famille.</p></div>
+    <div class="bloc c"><h3>Environnemental</h3><p>Zéro déplacement entre les îles et moins de prospectus imprimés.</p></div>
+    <div class="bloc"><h3>Personnel</h3><p>Valoriser mon savoir-faire technique et bâtir des revenus stables.</p></div>
+  </div>
+</section>
+
+<!-- 6. Avenir -->
+<section>
+  <h2>Où j'en suis et où je vais</h2>
+  <div class="cols c3">
+    <div class="bloc"><h3>Aujourd'hui</h3><p>Seul à développer Zeno, depuis mon domicile à Tahiti, sans frais de loyer.</p></div>
+    <div class="bloc i"><h3>À 3 ans</h3><p>Des bureaux à Papeete pour accueillir les clients, et une équipe de 3 à 4 personnes.</p></div>
+    <div class="bloc c"><h3>Statut</h3><p>Une SARL, pour pouvoir accueillir des investisseurs.</p></div>
+  </div>
+</section>
+
+<!-- 7. Conclusion -->
+<section data-background-color="#12161A">
+  <h1 class="grad" style="font-size:3em">Imaginez. Créez. Développez.</h1>
+  <p style="margin-top:.8em">Māuruuru roa pour votre attention. Je réponds volontiers à vos questions.</p>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  width:1280, height:720, margin:.06,
+  hash:true, controls:true, progress:true, slideNumber:'c/t',
+  transition:'convex',
+  backgroundTransition:'fade',
+  transitionSpeed:'default'
+});
+</script>
+</body>
+</html>
