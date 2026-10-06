@@ -134,6 +134,9 @@ header{justify-content:center}
 .pager button{width:22px;height:22px;font-size:11px}
 @media(max-width:820px){.sect{display:none}.card{left:6vw;right:6vw;width:auto;bottom:9vh}.left{bottom:36vh}.brand img{width:40px;height:40px}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important}}
+.box ul{list-style:none;display:grid;gap:8px}
+.box li{position:relative;padding-left:16px;font-size:clamp(12.5px,1.05vw,15px);line-height:1.55;font-weight:300;color:rgba(255,255,255,.9)}
+.box li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--cyan)}
 </style>
 </head>
 <body>
@@ -169,10 +172,10 @@ header{justify-content:center}
    <span class="co">ZENO</span>
   </div>
   <div class="grid">
-   <div class="box it" style="--i:1"><h3>Mon expérience</h3><p>BTS informatique, puis trois ans d'expériences concrètes : dropshipping, trading et marketing digital. C'est là que le besoin de créer de la vidéo en continu, sans y passer ses journées ni se filmer, est apparu.</p></div>
-   <div class="box it" style="--i:2"><h3>Mes compétences</h3><p>Développement web, réseaux et bases de données, intégration de l'IA, marketing digital et automatisation de la création de contenu vidéo.</p></div>
-   <div class="box it" style="--i:3"><h3>Ma motivation</h3><p>Libérer le temps des professionnels de Polynésie et rendre les outils d'IA accessibles aux petits commerces, snacks et pensions de famille du fenua.</p></div>
-   <div class="box it" style="--i:4"><h3>Mon objectif</h3><p>Lancer Zeno depuis Tahiti, ouvrir des bureaux à Papeete, créer des emplois informatiques locaux et constituer une équipe de 3 à 4 personnes en SARL.</p></div>
+   <div class="box it" style="--i:1"><h3>Mon expérience</h3><ul><li>Diplômé d'un BTS informatique</li><li>Dropshipping, trading, marketing digital</li><li>Constat : créer de la vidéo en continu prend trop de temps</li></ul></div>
+   <div class="box it" style="--i:2"><h3>Mes compétences</h3><ul><li>Développement web, réseaux et bases de données</li><li>Intégration de l'IA (OpenAI, Higgsfield)</li><li>Automatisation de la création vidéo et marketing digital</li></ul></div>
+   <div class="box it" style="--i:3"><h3>Ma motivation</h3><ul><li>Libérer le temps des professionnels de Polynésie</li><li>Rendre l'IA accessible aux entreprises du fenua</li><li>Un impact positif : moins de déplacements et de papier</li></ul></div>
+   <div class="box it" style="--i:4"><h3>Mon objectif</h3><ul><li>Lancer Zeno depuis Tahiti, à domicile à Paea</li><li>Ouvrir un local à Papeete d'ici 3 ans</li><li>Créer des emplois informatiques et une équipe de 3 à 4 personnes</li></ul></div>
   </div>
  </div>
 </div>
