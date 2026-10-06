@@ -137,6 +137,22 @@ header{justify-content:center}
 .box ul{list-style:none;display:grid;gap:8px}
 .box li{position:relative;padding-left:16px;font-size:clamp(12.5px,1.05vw,15px);line-height:1.55;font-weight:300;color:rgba(255,255,255,.9)}
 .box li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+.org{padding-top:13vh;gap:5vh}
+.org4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.blk{padding:20px 18px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(14px)}
+.blk h3{font-size:12.5px;letter-spacing:.16em;color:var(--cyan);font-weight:600;text-transform:uppercase;margin-bottom:14px}
+.blk ul{list-style:none;display:grid;gap:9px}
+.blk li{position:relative;padding-left:16px;font-size:clamp(12.5px,1.05vw,15px);line-height:1.5;font-weight:300;color:rgba(255,255,255,.9)}
+.blk li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+.tl2{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;padding-top:26px}
+.tl2::before{content:"";position:absolute;left:0;right:0;top:6px;height:3px;border-radius:3px;background:linear-gradient(90deg,#2fb6ff,#7b61ff 60%,#ff8c42)}
+.tl2 div{position:relative}
+.tl2 div::before{content:"";position:absolute;left:0;top:-26px;width:15px;height:15px;border-radius:50%;background:#06142b;border:3px solid var(--cyan)}
+.tl2 div:last-child::before{background:var(--cyan)}
+.tl2 b{display:block;font-size:clamp(12px,1vw,15px);font-weight:600;line-height:1.4}
+.tl2 span{display:block;margin-top:4px;font-size:clamp(12px,1vw,15px);color:var(--cyan);font-weight:300}
+@media(max-width:1180px){.org4{grid-template-columns:repeat(2,1fr)}.tl2{grid-template-columns:repeat(3,1fr);padding-top:0;row-gap:16px}.tl2::before{display:none}.tl2 div::before{position:static;display:block;margin-bottom:6px}}
+@media(max-width:820px){.org4{grid-template-columns:1fr}.tl2{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -183,29 +199,20 @@ header{justify-content:center}
 <!-- PAGE 3 -->
 <div class="slide s3" id="s3">
  <div class="org">
-  <div class="org-h it" style="--i:0"><h2>Mon organisation</h2><p>Du dossier administratif au Jour J</p></div>
-  <div class="tl it" style="--i:1"></div>
-  <div class="steps">
-   <article class="step it" style="--i:2"><div class="n">1</div><h3>Démarches administratives</h3><b class="d">6 mois à 1 an</b>
-    <p><em>Action</em>Constitution du dossier de patente et démarches de création</p>
-    <p><em>Intervenants</em>CCISM (guichet unique du CFE), ISPF, greffe, DICP et CPS</p></article>
-   <article class="step it" style="--i:3"><div class="n">2</div><h3>Devis / recherche fournisseurs</h3><b class="d">2 à 3 mois</b>
-    <p><em>Action</em>Comparer les offres et sélectionner les solutions</p>
-    <p><em>Intervenants</em>Fournisseurs d'API (OpenAI, Higgsfield) et grossistes locaux</p></article>
-   <article class="step it" style="--i:4"><div class="n">3</div><h3>Commande / matériel</h3><b class="d">2 à 3 mois</b>
-    <p><em>Action</em>Valider et commander le matériel et les solutions</p>
-    <p><em>Intervenants</em>Fournisseurs de matériel informatique, éditeurs OpenAI et Higgsfield</p></article>
-   <article class="step it" style="--i:5"><div class="n">4</div><h3>Mise en place, pub et tests</h3><b class="d">15 jours</b>
-    <p><em>Action</em>Déployer la solution, communiquer et tester</p>
-    <p><em>Intervenants</em>Entourage proche et professionnels du marché cible</p></article>
-   <article class="step it" style="--i:6"><div class="n">5</div><h3>Contrôle et ajustements</h3><b class="d">Quelques jours</b>
-    <p><em>Action</em>Analyser les retours et corriger la solution</p>
-    <p><em>Intervenants</em>Développeur en solo</p></article>
-   <article class="step it" style="--i:7"><div class="n">6</div><h3>Jour J : ouverture officielle</h3><b class="d">Le Jour J</b>
-    <p><em>Action</em>Lancer officiellement l'offre</p>
-    <p><em>Intervenants</em>Premiers clients réels : entreprises et directions marketing</p></article>
+  <div class="org4">
+   <div class="blk it" style="--i:0"><h3>Lieu d'activité</h3><ul><li>Démarrage à domicile, à Paea (Tahiti)</li><li>Aucun loyer au départ</li><li>Un local à Papeete d'ici 3 ans</li></ul></div>
+   <div class="blk it" style="--i:1"><h3>Équipement indispensable</h3><ul><li>Ordinateur et matériel de développement</li><li>Hébergement du site et base de données (cloud)</li><li>Accès aux API d'IA (texte, visage, voix, vidéo)</li></ul></div>
+   <div class="blk it" style="--i:2"><h3>Fournisseurs</h3><ul><li>OpenAI : les scripts</li><li>Higgsfield : visage, voix et vidéo</li><li>Vercel et Supabase : site et données</li><li>Grossistes informatiques locaux : le matériel</li></ul></div>
+   <div class="blk it" style="--i:3"><h3>Organisation</h3><ul><li>Seul au départ : gérant et développeur, sans associé ni sous-traitant</li><li>Entreprise individuelle au départ</li><li>SARL et équipe de 3 à 4 personnes avec la croissance</li></ul></div>
   </div>
-  <div class="org-f it" style="--i:8">Lancement de l'offre STELLAR à 14 990 F CFP / mois · Démarrage depuis mon domicile à Tahiti, sans loyer</div>
+  <div class="tl2 it" style="--i:4">
+   <div><b>Démarches administratives</b><span>6 mois à 1 an</span></div>
+   <div><b>Devis et fournisseurs</b><span>2 à 3 mois</span></div>
+   <div><b>Commande du matériel</b><span>2 à 3 mois</span></div>
+   <div><b>Mise en place, pub et tests</b><span>15 jours</span></div>
+   <div><b>Contrôle et ajustements</b><span>Quelques jours</span></div>
+   <div><b>Jour J : ouverture officielle</b></div>
+  </div>
  </div>
 </div>
 
