@@ -385,6 +385,29 @@ body:has(#value6.active) header .brand{right:4vw;top:24px;transform:none}body:ha
 @media(min-width:1001px) and (max-height:800px){.timeline8{padding-top:110px;padding-bottom:65px;gap:28px}.timeline8-detail{padding:18px 14px}.timeline8-duration{margin:12px 0}.timeline8-step{gap:18px}}
 @media(max-width:1000px){.timeline8{padding:140px 6vw 85px;justify-content:flex-start;gap:32px}.timeline8-track{grid-template-columns:1fr;gap:22px}.timeline8-track::before{top:0;bottom:0;left:24px;width:3px;height:auto;right:auto;background:linear-gradient(#2fb6ff,#b5a5ff,#38cfee,#a9c5ef,#ba8bff,#44d7ff)}.timeline8-track::after{display:none}.timeline8-step{display:grid;grid-template-columns:50px 1fr;gap:20px}.timeline8-detail h3{min-height:0;font-size:23px}.timeline8-detail h3 br{display:none}.timeline8-duration{min-height:0;font-size:20px;margin:12px 0}.timeline8-action{font-size:20px}.timeline8-note span{margin:0 5px}}
 </style>
+
+<style>
+/* Diapo 8 — informations pratiques et frise réunies. */
+.mix8{position:absolute;inset:0;z-index:4;padding:13vh 4vw 8vh;display:flex;flex-direction:column;justify-content:center;gap:2.8vh;overflow-y:auto}.mix8>*{flex-shrink:0}
+.mix8 .offer-kicker{margin-bottom:10px}.mix8 h2{font-size:clamp(30px,3vw,54px);line-height:1.15;font-weight:200}
+.mix8-facts{display:grid;grid-template-columns:1fr 1fr 1.3fr 1fr;gap:16px}
+.mix8-facts article{--c:#2fb6ff;border:1px solid rgba(255,255,255,.18);border-left:3px solid var(--c);border-radius:0 12px 12px 0;background:rgba(16,30,49,.94);padding:18px}
+.mix8-facts article:nth-child(2){--c:#b5a5ff}.mix8-facts article:nth-child(3){--c:#ffc18c}.mix8-facts article:nth-child(4){--c:#7bdccc}
+.mix8-facts h3{font-size:clamp(18px,1.4vw,26px);font-weight:400;color:var(--c);line-height:1.3;margin-bottom:12px}
+.mix8 ul{list-style:none;display:grid;gap:8px}.mix8 ul li{position:relative;padding-left:13px;font-size:clamp(16px,1.1vw,21px);font-weight:300;line-height:1.4}.mix8 ul li::before{content:"•";position:absolute;left:0;color:var(--c)}
+.mix8-label{font-size:clamp(14px,1vw,19px);font-weight:400;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin-bottom:16px}
+.mix8-track{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;list-style:none;position:relative}
+.mix8-track::before{content:"";position:absolute;left:0;right:0;top:19px;height:3px;background:linear-gradient(90deg,#2fb6ff,#b5a5ff,#38cfee,#a9c5ef,#ba8bff,#44d7ff)}
+.mix8-track::after{content:"";position:absolute;right:0;top:14px;width:10px;height:10px;border-right:3px solid #44d7ff;border-top:3px solid #44d7ff;transform:rotate(45deg)}
+.mix8-track>li{position:relative;min-width:0;padding-top:0}
+.mix8-dot{display:grid;place-items:center;position:relative;width:40px;height:40px;border:2px solid var(--c);background:#0a203a;border-radius:50%;color:var(--c);font-size:20px;margin-bottom:14px}
+.mix8-track h3{font-size:clamp(17px,1.25vw,24px);font-weight:400;color:var(--c);line-height:1.3;margin-bottom:8px}
+.mix8-time{font-size:clamp(16px,1.15vw,22px);line-height:1.4;margin-bottom:12px;min-height:2.8em}
+.mix8-track ul{border-top:1px solid rgba(255,255,255,.2);padding-top:12px}
+@media(min-width:1001px) and (max-height:800px){.mix8{padding-top:100px;padding-bottom:58px;gap:18px}.mix8-facts article{padding:14px}.mix8 h2{font-size:36px}.mix8-facts h3{margin-bottom:10px}.mix8 ul{gap:6px}.mix8-dot{margin-bottom:10px}.mix8-label{margin-bottom:12px}.mix8-time{margin-bottom:8px}}
+@media(max-width:1000px){.mix8{padding:140px 6vw 85px;justify-content:flex-start;gap:28px}.mix8-facts{grid-template-columns:1fr 1fr}.mix8-track{grid-template-columns:1fr;gap:24px}.mix8-track::before,.mix8-track::after{display:none}.mix8-track>li{border-left:2px solid var(--c);padding-left:20px}.mix8-time{min-height:0}.mix8 ul li{font-size:19px}.mix8-track h3{font-size:23px}}
+@media(max-width:600px){.mix8-facts{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div class="glow"></div>
@@ -540,19 +563,17 @@ Avantages prévus pour le service en développement. Aucune promesse de délai, 
  </div>
 </section>
 
-<!-- DIAPO 8 — Frise du rétroplanning fourni par l’utilisateur ; durées prévisionnelles, business plan p. 35. -->
-<section class="slide s3 timeline8-slide" id="s3" aria-labelledby="timeline8-title">
- <div class="timeline8">
-  <div><p class="offer-kicker">08 / Mon organisation</p><h2 id="timeline8-title">De la préparation au lancement</h2></div>
-  <ol class="timeline8-track" aria-label="Les six étapes de lancement de ZENO">
-<li class="timeline8-step" style="--step-color:#2fb6ff"><div class="timeline8-marker" aria-hidden="true">1</div><div class="timeline8-detail"><h3>Démarches<br>administratives</h3><p class="timeline8-duration">6 mois à 1 an</p><p class="timeline8-action">Préparer le dossier et les démarches de création.</p></div></li>
-<li class="timeline8-step" style="--step-color:#b5a5ff"><div class="timeline8-marker" aria-hidden="true">2</div><div class="timeline8-detail"><h3>Devis et<br>fournisseurs</h3><p class="timeline8-duration">2 à 3 mois</p><p class="timeline8-action">Comparer les offres et choisir les fournisseurs.</p></div></li>
-<li class="timeline8-step" style="--step-color:#38cfee"><div class="timeline8-marker" aria-hidden="true">3</div><div class="timeline8-detail"><h3>Commande<br>du matériel</h3><p class="timeline8-duration">2 à 3 mois</p><p class="timeline8-action">Commander le matériel et les outils nécessaires.</p></div></li>
-<li class="timeline8-step" style="--step-color:#a9c5ef"><div class="timeline8-marker" aria-hidden="true">4</div><div class="timeline8-detail"><h3>Mise en place,<br>publicité et tests</h3><p class="timeline8-duration">15 jours</p><p class="timeline8-action">Installer, faire connaître le service et le tester.</p></div></li>
-<li class="timeline8-step" style="--step-color:#ba8bff"><div class="timeline8-marker" aria-hidden="true">5</div><div class="timeline8-detail"><h3>Contrôle et<br>ajustements</h3><p class="timeline8-duration">Quelques jours</p><p class="timeline8-action">Recueillir les retours et corriger les problèmes.</p></div></li>
-<li class="timeline8-step" style="--step-color:#44d7ff"><div class="timeline8-marker" aria-hidden="true">6</div><div class="timeline8-detail"><h3>Ouverture<br>officielle</h3><p class="timeline8-duration">Jour J</p><p class="timeline8-action">Lancer ZENO et accueillir les premiers clients.</p></div></li>
-  </ol>
-  <p class="timeline8-note">Planning prévisionnel <span>·</span> Date d’ouverture à confirmer</p>
+<!-- DIAPO 8 — Organisation pratique et rétroplanning fourni par l’utilisateur. -->
+<section class="slide s3 mix8-slide" id="s3" aria-labelledby="mix8-title">
+ <div class="mix8">
+  <div><p class="offer-kicker">08 / De la préparation au lancement</p><h2 id="mix8-title">Mon organisation</h2></div>
+  <div class="mix8-facts">
+   <article><h3>Lieu de travail</h3><ul><li>Maison familiale à Paea</li><li>Accord du propriétaire à confirmer</li></ul></article>
+   <article><h3>Équipement</h3><ul><li>Ordinateur et écran à acquérir</li><li>Internet à installer</li></ul></article>
+   <article><h3>Fournisseurs envisagés</h3><ul><li>Cybertech : matériel</li><li>Vercel / Supabase : site et données</li><li>OpenAI / Higgsfield : IA</li></ul></article>
+   <article><h3>Au quotidien</h3><ul><li>Seul au démarrage</li><li>Site et communication</li><li>Clients et gestion</li></ul></article>
+  </div>
+  <div class="mix8-plan"><h3 class="mix8-label">Mes six étapes de lancement</h3><ol class="mix8-track"><li style="--c:#2fb6ff"><span class="mix8-dot" aria-hidden="true">1</span><h3>Démarches</h3><p class="mix8-time">6 mois à 1 an</p><ul><li>Dossier de création</li><li>Démarches administratives</li></ul></li><li style="--c:#b5a5ff"><span class="mix8-dot" aria-hidden="true">2</span><h3>Fournisseurs</h3><p class="mix8-time">2 à 3 mois</p><ul><li>Comparer les devis</li><li>Choisir les prestataires</li></ul></li><li style="--c:#38cfee"><span class="mix8-dot" aria-hidden="true">3</span><h3>Matériel</h3><p class="mix8-time">2 à 3 mois</p><ul><li>Commander le matériel</li><li>Préparer les outils</li></ul></li><li style="--c:#a9c5ef"><span class="mix8-dot" aria-hidden="true">4</span><h3>Mise en place</h3><p class="mix8-time">15 jours</p><ul><li>Installation et publicité</li><li>Tests du service</li></ul></li><li style="--c:#ba8bff"><span class="mix8-dot" aria-hidden="true">5</span><h3>Ajustements</h3><p class="mix8-time">Quelques jours</p><ul><li>Recueillir les retours</li><li>Corriger les problèmes</li></ul></li><li style="--c:#44d7ff"><span class="mix8-dot" aria-hidden="true">6</span><h3>Ouverture</h3><p class="mix8-time">Jour J</p><ul><li>Lancer ZENO</li><li>Accueillir les clients</li></ul></li></ol></div>
  </div>
 </section>
 
