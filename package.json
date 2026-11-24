@@ -1,7 +1,0 @@
-{
-  "name": "zeno-presentation-cinema",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Présentation locale de dix diapositives. Ouvrir index.html sans installation.",
-  "dependencies": {}
-}
