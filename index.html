@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZENO — Présentation</title><link rel="stylesheet" href="src/styles/main.css"></head>
+<body><div id="stage"><div id="iris"></div></div>
+<nav id="ctl"><button id="prev" aria-label="Précédent">‹</button><span id="cnt">1 / 10</span><button id="next" aria-label="Suivant">›</button><button id="fs" aria-label="Plein écran">⛶</button><em id="mode"></em></nav>
+<div id="err" style="display:none;position:fixed;inset:0;z-index:99;background:#0a0907;color:#f3ead7;font:24px/1.5 Segoe UI,Arial;padding:60px">La présentation ne s’est pas chargée.<br>1) Extrais d’abord le ZIP (clic droit → Extraire tout).<br>2) Ouvre <b>index.html</b> depuis le dossier extrait avec Chrome ou Edge.<br>3) Le dossier <b>dist</b> doit contenir <b>zeno.js</b>.</div>
+<script>window.addEventListener("error",function(){document.getElementById("err").style.display="block"});</script>
+<script src="dist/zeno.js"></script></body></html>
